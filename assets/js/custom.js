@@ -14,7 +14,7 @@ jQuery(function ($) {
 
     01. Preloader
     02. Isotope Plugin
-    03. Functions 
+    03. Functions
     04. Menu
     05. Window Resize
     06. MagnifPopup Plugin
@@ -38,7 +38,7 @@ jQuery(function ($) {
         /*--------------------------------
             01. Preloader
         ----------------------------------*/
-        setTimeout(function(){ 
+        setTimeout(function(){
             $('.startLoad').fadeOut('slow');
          }, 600);
 
@@ -59,7 +59,7 @@ jQuery(function ($) {
             });
         }
 
-        
+
     });//--- window(load) ---//
 
 
@@ -72,7 +72,7 @@ jQuery(function ($) {
 
 
     /*--------------------------------
-        03. Functions 
+        03. Functions
     ----------------------------------*/
     var intro       = '.intro',
         page_right  = '.page-right',
@@ -170,7 +170,7 @@ jQuery(function ($) {
 
     /*--------------------------------
         09. Slick plugin
-    ----------------------------------*/ 
+    ----------------------------------*/
     if ( $("body").data( 'owl_slick' ) == null){
 
         var owl_slick = '.owl';
@@ -178,7 +178,7 @@ jQuery(function ($) {
             infinite: false,
             slidesToShow: 2,
             arrows: false,
-            responsive: 
+            responsive:
                 [{
                   breakpoint: 768,
                   settings: {
@@ -200,14 +200,8 @@ jQuery(function ($) {
 
 
     /*--------------------------------
-        10. Jquery.matchHeight Plugin
-    ----------------------------------*/
-    $(".matchH").matchHeight();
-
-
-    /*--------------------------------
         11. Skills
-    ----------------------------------*/ 
+    ----------------------------------*/
     $(".skills .percentage").each(function() {
         var percentage = $(this).text();
         $(this).parent().find(".progress_bar").width(percentage);
@@ -216,7 +210,7 @@ jQuery(function ($) {
 
     /*--------------------------------
         12. Scroll
-    ----------------------------------*/ 
+    ----------------------------------*/
     var $pt__page = $(".pt-perspective section.pt-page");
     if($pt__page.length){
         $pt__page.parents(".pt-perspective").addClass('overFlowHidden');
@@ -230,7 +224,7 @@ jQuery(function ($) {
         14. Google Map
     ----------------------------------*/
     var map = null;
-    
+
     function googleMap(selector, lat, lng) {
         if (!map) {
             var myOptions = {
@@ -243,7 +237,7 @@ jQuery(function ($) {
                 styles: [{"featureType":"water","elementType":"geometry","stylers":[{"color":"#e9e9e9"},{"lightness":17}]},{"featureType":"landscape","elementType":"geometry","stylers":[{"color":"#f5f5f5"},{"lightness":20}]},{"featureType":"road.highway","elementType":"geometry.fill","stylers":[{"color":"#ffffff"},{"lightness":17}]},{"featureType":"road.highway","elementType":"geometry.stroke","stylers":[{"color":"#ffffff"},{"lightness":29},{"weight":0.2}]},{"featureType":"road.arterial","elementType":"geometry","stylers":[{"color":"#ffffff"},{"lightness":18}]},{"featureType":"road.local","elementType":"geometry","stylers":[{"color":"#ffffff"},{"lightness":16}]},{"featureType":"poi","elementType":"geometry","stylers":[{"color":"#f5f5f5"},{"lightness":21}]},{"featureType":"poi.park","elementType":"geometry","stylers":[{"color":"#dedede"},{"lightness":21}]},{"elementType":"labels.text.stroke","stylers":[{"visibility":"on"},{"color":"#ffffff"},{"lightness":16}]},{"elementType":"labels.text.fill","stylers":[{"saturation":36},{"color":"#333333"},{"lightness":40}]},{"elementType":"labels.icon","stylers":[{"visibility":"off"}]},{"featureType":"transit","elementType":"geometry","stylers":[{"color":"#f2f2f2"},{"lightness":19}]},{"featureType":"administrative","elementType":"geometry.fill","stylers":[{"color":"#fefefe"},{"lightness":20}]},{"featureType":"administrative","elementType":"geometry.stroke","stylers":[{"color":"#fefefe"},{"lightness":17},{"weight":1.2}]}],
             };
             map = new google.maps.Map(document.getElementById(selector), myOptions);
-            
+
             var marker = new google.maps.Marker({
                 position: {lat: 28.6139, lng: 77.2090},
                 icon: 'assets/images/map-marker.png'
@@ -320,11 +314,11 @@ jQuery(function ($) {
             marker.setMap(map);
 
             //united states
-    
+
         } else {
             map.setCenter(myLatlng);
         }
-        
+
     }
 
     if ($("#map").length !== 0){
