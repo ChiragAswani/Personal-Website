@@ -171,7 +171,7 @@ jQuery(function ($) {
     /*--------------------------------
         09. Slick plugin
     ----------------------------------*/
-    if ( $("body").data( 'owl_slick' ) == null){
+    /* if ( $("body").data( 'owl_slick' ) == null){
 
         var owl_slick = '.owl';
         $(owl_slick).slick({
@@ -196,7 +196,7 @@ jQuery(function ($) {
             $(owl_slick).slick('slickNext');
         });
 
-    }
+    } */
 
 
     /*--------------------------------
@@ -321,12 +321,12 @@ jQuery(function ($) {
 
     }
 
-    if ($("#map").length !== 0){
+  /*  if ($("#map").length !== 0){
 
         $("#map").show();
         googleMap("map", 40.712784, -74.005941);
 
-    }
+    } */
 
 });
 

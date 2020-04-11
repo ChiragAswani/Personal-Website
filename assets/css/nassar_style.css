@@ -175,6 +175,7 @@ body, html {
     padding: 0;
     margin: 0;
     height: 100%;
+    line-height:28.8px;
 }
 
 html {
@@ -1334,7 +1335,7 @@ body.small_menu .menu_list a:after {
     padding-top: 2px;
     padding-bottom: 14px;
     position: relative;
-    line-height: 1;
+    line-height: 14px;
 }
 
 .skill > span:not(.percentage) {
@@ -1482,7 +1483,7 @@ body.small_menu .menu_list a:after {
     color: #383838;
     margin-bottom: 8px;
     margin-top: 17px;
-    letter-spacing: 0.5px;
+
 }
 
 .fun-facts h5 {
@@ -2047,7 +2048,7 @@ li.active_filter:after {
     font-size: 11px;
     letter-spacing: 0.2px;
     line-height: 1;
-    margin-bottom: 12px;
+    margin-bottom: 8px;
     position: relative;
     padding: 10px 12px;
 }
@@ -2616,4 +2617,45 @@ ul.share-post {
 .comment-form textarea {
     border-radius: 0;
     height: 200px;
+}
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+    line-height: 1.1;
+}
+.h1, h1 {
+
+    font-size: 36px;
+}
+body #home .mt-4, 
+body #home .my-4 {
+    margin-top: 0.9rem!important;
+}
+body #home .mb-4, 
+body #home .my-4 {
+    margin-bottom: 1.1rem!important;
+}
+body > header.mobile-header-2 > div > div.menu-icon.d-inline-flex.mr-4 {
+    position: absolute;
+}
+.horizontal-timeline-container li {
+    font-size: 14px;
+  }
+.horizontal-timeline-container {
+  overflow-x: hidden;
+    z-index: -1;
+}
+
+h4, .h4 {
+    font-size: 18px;
+}
+.view-athlete-results a {
+    font-size: 14px;
+}
+p {
+    margin: 0 0 10px;
+}
+.events-wrapper {
+    max-width: 815px;
+}
+#root {
+    margin-right: 27px;
 }

@@ -45,7 +45,9 @@ html {
   margin: 0 !important;
   overflow: auto !important;
 }
-
+html.hidden {
+  overflow-y: hidden !important;
+}
 body {
   color: #5E5C7F;
   background-color: #F9F9FF;
@@ -83,7 +85,7 @@ img {
 /*=================================================================*/
 h1, h2, h3, h4, h5, h6 {
   color: #454360;
-  font-family: "Rubik", sans-serif;
+  font-family: "Public Sans", sans-serif;
   font-weight: 700;
   margin: 20px 0;
 }
@@ -165,7 +167,23 @@ pre {
   height: 60px;
   animation: rotate 6.9s linear infinite;
 }
+.infinity.two div {
+  top: 19px;
+}
 .infinity div span {
+  left: -8px;
+  top: 50%;
+  margin: -8px 0 0 0;
+  width: 16px;
+  height: 16px;
+  display: block;
+  background: #FF4C60;
+  box-shadow: 2px 2px 8px rgba(255, 76, 96, 0.09);
+  border-radius: 50%;
+  transform: rotate(90deg);
+  animation: move 6.9s linear infinite;
+}
+.infinity.two div span {
   left: -8px;
   top: 50%;
   margin: -8px 0 0 0;
@@ -192,10 +210,10 @@ pre {
   box-shadow: inherit;
 }
 .infinity div span:before {
-  animation: drop1 0.8s linear infinite;
+  animation: drop1 1s linear infinite;
 }
 .infinity div span:after {
-  animation: drop2 0.8s linear infinite 0.4s;
+  animation: drop2 1s linear infinite 0.4s;
 }
 .infinity div:nth-child(2) {
   animation-delay: -2.3s;
@@ -213,6 +231,27 @@ pre {
 .infinityChrome {
   width: 128px;
   height: 60px;
+}
+.infinity.second div {
+top: -30px;
+}
+.infinity.two div span:before {
+  animation: drop1 0.8s linear infinite;
+}
+.infinity.two div span:after {
+  animation: drop2 1.8s linear infinite 0.4s;
+}
+.infinity.two div:nth-child(2) {
+  animation-delay: -2.5s;
+}
+.infinity.two div:nth-child(2) span {
+  animation-delay: -2.5s;
+}
+.infinity.two div:nth-child(3) {
+  animation-delay: -5s;
+}
+.infinity.two div:nth-child(3) span {
+  animation-delay: -5s;
 }
 .infinityChrome div {
   position: absolute;
@@ -310,6 +349,7 @@ pre {
   position: fixed;
   width: 100%;
   z-index: 1031;
+  overflow: hidden;
 }
 #preloader .outer {
   position: absolute;
@@ -412,7 +452,7 @@ header.desktop-header-1 .vertical-menu li .switch {
 }
 header.desktop-header-1 .vertical-menu li a {
   color: #FFF;
-  font-family: "Rubik", sans-serif;
+  font-family: "Public Sans", sans-serif;
   font-size: 16px;
   font-weight: 700;
   width: 100%;
@@ -1303,7 +1343,7 @@ select.portfolio-filter-mobile {
 /*                      CONTACT                              
 /*=================================================================*/
 .contact-info {
-  background-image: url("../images/map.svg");
+  background-image: url("../images/map.png");
   background-repeat: no-repeat;
   background-size: contain;
   min-height: 200px;

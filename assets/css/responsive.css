@@ -34,7 +34,8 @@
 @media(max-width:1051px)
 {
 	.view-athlete-results {
-		margin-top: 0px !important;
+		margin-top: -0px !important;
+		margin-bottom: -20px;
 	}
 }
 
@@ -160,6 +161,20 @@
 ===============================================*/
 
 @media(max-width:768px){
+#fun-facts {
+	position: absolute;
+}
+body .blog-wrapper {
+    margin: -20px -15px;
+}
+#map {
+	min-height: unset !important;
+}
+#map img {
+	/* height: 400px; */
+	object-fit: contain;
+	/* object-position: -100px; */
+	}
 
 	#about .about__img {
 		margin-bottom: 30px;
@@ -198,6 +213,7 @@
 	.fun-facts .item {
 		margin-bottom: 25px;
 		padding: 20px 0;
+		margin: 10px;
 	}
 
 	.fun-facts h5 {
@@ -255,7 +271,17 @@
 	}
 
 }
-
+@media(max-width: 450px) {
+	.view-athlete-results {
+		margin-top: -80px !important;
+		margin-bottom: -20px;
+		position: relative;
+		z-index: 9999;
+	}
+	#root .athletic-stats-container .col-md-3 {
+		margin: 1px;
+	}
+}
 
 
 /*===============================================

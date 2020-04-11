@@ -60,15 +60,229 @@
 
 <!-- Preloader -->
 <div id="preloader">
-	<div class="outer">
+
+	<style>
+
+		.contentX {
+		  max-width: 600px;
+		  margin: auto;
+		  padding: 5px;
+		  height: 100%;
+		  display: flex;
+		  justify-content: center;
+		  flex-wrap: wrap;
+		  align-content: flex-start;
+		}
+		.contentX .column {
+		  width: calc(33.33% - 10px);
+		  height: 170px;
+		  height: 100vh;
+		  background-color: transparent;
+		  margin: 5px;
+		
+		  display: flex;
+		  justify-content: center;
+		  align-items: center;
+		}
+		
+		.containerX {
+		  width: 30px;
+		  height: 30px;
+		  position: relative;
+		}
+		.containerX.animation-1 {
+		  -webkit-transform: rotate(45deg);
+				  transform: rotate(45deg);
+		}
+		.containerX.animation-2, .containerX.animation-4 {
+		  -webkit-transform: rotate(10deg);
+				  transform: rotate(10deg);
+		}
+		.containerX.animation-2 .shape, .containerX.animation-4 .shape {
+		  border-radius: 5px;
+		}
+		.containerX.animation-2, .containerX.animation-3, .containerX.animation-4 {
+		  -webkit-animation: rotation 1s infinite;
+				  animation: rotation 1s infinite;
+		}
+		
+		.containerX .shape {
+		  position: absolute;
+		  width: 10px;
+		  height: 10px;
+		  border-radius: 1px;
+		}
+		.containerX .shape.shape1 {
+		  left: 0;
+		  background-color: #948fd8;
+		}
+		.containerX .shape.shape2 {
+		  right: 0;
+		  background-color: #d0568b;
+		}
+		.containerX .shape.shape3 {
+		  bottom: 0;
+		  background-color: #fed05d;
+		}
+		.containerX .shape.shape4 {
+		  bottom: 0;
+		  right: 0;
+		  background-color: #ff715f;
+		}
+		
+		@-webkit-keyframes rotation {
+		  from {
+			-webkit-transform: rotate(0deg);
+					transform: rotate(0deg);
+		  }
+		  to {
+			-webkit-transform: rotate(360deg);
+					transform: rotate(360deg);
+		  }
+		}
+		
+		@keyframes rotation {
+		  from {
+			-webkit-transform: rotate(0deg);
+					transform: rotate(0deg);
+		  }
+		  to {
+			-webkit-transform: rotate(360deg);
+					transform: rotate(360deg);
+		  }
+		}
+		.animation-2 .shape1 {
+		  -webkit-animation: animation2shape1 0.5s ease 0s infinite alternate;
+				  animation: animation2shape1 0.5s ease 0s infinite alternate;
+		}
+		
+		@-webkit-keyframes animation2shape1 {
+		  from {
+			-webkit-transform: translate(0, 0);
+					transform: translate(0, 0);
+		  }
+		  to {
+			-webkit-transform: translate(20px, 20px);
+					transform: translate(20px, 20px);
+		  }
+		}
+		
+		@keyframes animation2shape1 {
+		  from {
+			-webkit-transform: translate(0, 0);
+					transform: translate(0, 0);
+		  }
+		  to {
+			-webkit-transform: translate(20px, 20px);
+					transform: translate(20px, 20px);
+		  }
+		}
+		.animation-2 .shape2 {
+		  -webkit-animation: animation2shape2 0.5s ease 0s infinite alternate;
+				  animation: animation2shape2 0.5s ease 0s infinite alternate;
+		}
+		
+		@-webkit-keyframes animation2shape2 {
+		  from {
+			-webkit-transform: translate(0, 0);
+					transform: translate(0, 0);
+		  }
+		  to {
+			-webkit-transform: translate(-20px, 20px);
+					transform: translate(-20px, 20px);
+		  }
+		}
+		
+		@keyframes animation2shape2 {
+		  from {
+			-webkit-transform: translate(0, 0);
+					transform: translate(0, 0);
+		  }
+		  to {
+			-webkit-transform: translate(-20px, 20px);
+					transform: translate(-20px, 20px);
+		  }
+		}
+		.animation-2 .shape3 {
+		  -webkit-animation: animation2shape3 0.5s ease 0s infinite alternate;
+				  animation: animation2shape3 0.5s ease 0s infinite alternate;
+		}
+		
+		@-webkit-keyframes animation2shape3 {
+		  from {
+			-webkit-transform: translate(0, 0);
+					transform: translate(0, 0);
+		  }
+		  to {
+			-webkit-transform: translate(20px, -20px);
+					transform: translate(20px, -20px);
+		  }
+		}
+		
+		@keyframes animation2shape3 {
+		  from {
+			-webkit-transform: translate(0, 0);
+					transform: translate(0, 0);
+		  }
+		  to {
+			-webkit-transform: translate(20px, -20px);
+					transform: translate(20px, -20px);
+		  }
+		}
+		.animation-2 .shape4 {
+		  -webkit-animation: animation2shape4 0.5s ease 0s infinite alternate;
+				  animation: animation2shape4 0.5s ease 0s infinite alternate;
+		}
+		
+		@-webkit-keyframes animation2shape4 {
+		  from {
+			-webkit-transform: translate(0, 0);
+					transform: translate(0, 0);
+		  }
+		  to {
+			-webkit-transform: translate(-20px, -20px);
+					transform: translate(-20px, -20px);
+		  }
+		}
+		
+		@keyframes animation2shape4 {
+		  from {
+			-webkit-transform: translate(0, 0);
+					transform: translate(0, 0);
+		  }
+		  to {
+			-webkit-transform: translate(-20px, -20px);
+					transform: translate(-20px, -20px);
+		  }
+		}	
+		</style>
+		
+		
+		
+		  <div class="contentX">
+		
+			<div class="column">
+			  <div class="containerX animation-2">
+				<div class="shape shape1"></div>
+				<div class="shape shape2"></div>
+				<div class="shape shape3"></div>
+				<div class="shape shape4"></div>
+			  </div>
+			</div>
+		   
+		
+		
+		  </div>
+		
+		
 		<!-- Google Chrome -->
-		<div class="infinityChrome">
+	
+		
+<!-- 		<div class="infinityChrome">
 			<div></div>
 			<div></div>
 			<div></div>
 		</div>
-
-		<!-- Safari and others -->
 		<div class="infinity">
 			<div>
 				<span></span>
@@ -80,17 +294,21 @@
 				<span></span>
 			</div>
 		</div>
-		<!-- Stuff -->
-		<svg xmlns="http://www.w3.org/2000/svg" version="1.1" class="goo-outer">
-			<defs>
-				<filter id="goo">
-					<feGaussianBlur in="SourceGraphic" stdDeviation="6" result="blur" />
-					<feColorMatrix in="blur" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7" result="goo" />
-					<feBlend in="SourceGraphic" in2="goo" />
-				</filter>
-			</defs>
-		</svg>
-	</div>
+
+
+		<div class="infinity two">
+			<div>
+				<span></span>
+			</div>
+			<div>
+				<span></span>
+			</div>
+			<div>
+				<span></span>
+			</div>
+		</div> -->
+		<link rel="stylesheet" href="css/style.css" type="text/css" media="all">
+
 </div>
 
 <!-- mobile header -->
