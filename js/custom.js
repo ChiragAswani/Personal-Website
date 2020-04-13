@@ -242,12 +242,9 @@ $(window).on('load', function() {
     };
 });
 
-$(document).on('ready', function() {
+/* $(document).on('ready', function() {
     "use strict";
 
-    /*=========================================================================
-                Slick Slider
-    =========================================================================*/
     $('.testimonials-wrapper').slick({
       dots: true,
       arrows: false,
@@ -255,7 +252,7 @@ $(document).on('ready', function() {
       autoplaySpeed: 3000
     });
 
-});
+}); */
 
 $(function(){
     "use strict";
@@ -301,6 +298,8 @@ $(function(){
     /*=========================================================================
      Parallax layers
      =========================================================================*/
+     if (screen && screen.width > 480) {
+       
      setTimeout(function() {
       if ($('.parallax').length > 0) { 
         var scene = $('.parallax').get(0);
@@ -309,7 +308,7 @@ $(function(){
         });
       }
      }, 100);
-  
+    }
 
      /*=========================================================================
      Text Rotating
