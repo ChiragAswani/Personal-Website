@@ -39,4 +39,5 @@ AddOutputFilterByType DEFLATE font/opentype
 BrowserMatch ^Mozilla/4 gzip-only-text/html
 BrowserMatch ^Mozilla/4\.0[678] no-gzip
 BrowserMatch \bMSIE !no-gzip !gzip-only-text/html
+Header set Cache-Control "max-age=315360000, public"
 </IfModule>
