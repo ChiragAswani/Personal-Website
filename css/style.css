@@ -36,6 +36,12 @@ Description: Portfolio/CV/Resume HTML Template
 /*=================================================================*/
 /*                      BASE                              
 /*=================================================================*/
+
+.remove-extra-spacing {
+  padding-left: 0px !important;
+  margin-left: 0px !important;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -1343,10 +1349,8 @@ select.portfolio-filter-mobile {
 /*                      CONTACT                              
 /*=================================================================*/
 .contact-info {
-  background-image: url("../images/map.png");
   background-repeat: no-repeat;
   background-size: contain;
-  min-height: 200px;
 }
 .contact-info h3 {
   font-size: 23px;
