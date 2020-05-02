@@ -1,2 +1,7 @@
 .DS_Store
 LightsailDefaultKey-us-west-2.pem
+.idea/
+.idea/Personal-Website.iml
+.idea/misc.xml
+.idea/modules.xml
+.idea/vcs.xml
