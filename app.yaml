@@ -1,0 +1,2 @@
+service: personal-website
+runtime: nodejs14
