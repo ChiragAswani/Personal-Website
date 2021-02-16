@@ -74,7 +74,8 @@ body {
 }
 
 .name-description {
-    font-size: 20px;
+    font-size: 18px;
+    color: gray;
 }
 
 section:not(.pt-page) {
